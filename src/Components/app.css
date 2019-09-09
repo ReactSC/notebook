@@ -112,7 +112,6 @@ form {margin-bottom: 30px;}
   transition: 0.5s;
   border-bottom: 1px solid #dbdfff;
   display: flex;
-  cursor: pointer;
 }
 .note-card:last-child {border-bottom: none}
 .note-card span.sl {font-size: 35px}
