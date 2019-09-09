@@ -55,9 +55,9 @@ class Notes extends Component {
             return(
               <div
               className="note-card"
-              key={ index }
-              onClick= { ()=> this.note(note.id) } >
+              key={ index }>
                 <span 
+                  onClick= { ()=> this.note(note.id) }
                   className="note-content">
                     <h2>{ note.title }</h2>
                     <p>{ note.description }</p>
