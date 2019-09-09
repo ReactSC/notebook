@@ -12,6 +12,10 @@ class Note extends Component {
     this.props.history.push(`/edit/${id}`);
   }
 
+  delete = id => {
+    this.context.delete(id);
+    this.props.history.push('/')
+  }
 
   render() {
     const paramID = Number(this.props.match.params.id)
@@ -28,7 +32,7 @@ class Note extends Component {
         <span className="right" >
           <button
             className="btn delete"
-            onClick= { () => this.context.delete(paramID) }
+            onClick= { () => this.delete(paramID) }
           >Delete</button>
 
           <Link
