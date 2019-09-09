@@ -21,6 +21,9 @@ class Note extends Component {
     const paramID = Number(this.props.match.params.id)
     const filterd = this.context.notes.filter(note=> note.id === paramID)[0]
     const { title, description } = filterd;
+    if(!filterd) {
+      this.props.history.push("/")
+    }
 
     return (
       <div>

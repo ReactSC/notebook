@@ -64,6 +64,11 @@ class Notes extends Component {
                 </span>
       
                 <span className="action">
+                <button
+                    className="btn delete"
+                    onClick= { () => this.context.delete(note.id) }
+                  >Delete</button>
+
                   <button
                     className="btn submit"
                     onClick= { () => this.edit(note.id) }
